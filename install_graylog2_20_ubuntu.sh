@@ -250,7 +250,7 @@ GRAYLOG2_WEB_INTERFACE_PID=/opt/graylog2-web-interface/RUNNING_PID
 start() {
 echo "Starting graylog2-web-interface ..."
 #sleep 3m
-$NOHUP /opt/graylog2-web-interface/bin/graylog2-web-interface &
+$NOHUP /opt/graylog2-web-interface/bin/graylog2-web-interface -Dhttp.port=9001 &
 }
 
 stop() {
